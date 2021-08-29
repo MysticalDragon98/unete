@@ -151,7 +151,7 @@ var HTTPServer = /** @class */ (function () {
                         exc_1 = _b.sent();
                         (0, logger_1.log)("UNETE", (0, termx_1.danger)(rq.connection.remoteAddress), (0, termx_1.danger)(exc_1.message || exc_1));
                         if (this.options.responseType === "object")
-                            rs.status(500).json({ message: exc_1.message });
+                            rs.status(500).json({ error: exc_1.message });
                         else if (this.options.responseType === "raw")
                             rs.status(500).json(exc_1.message);
                         return [3 /*break*/, 7];

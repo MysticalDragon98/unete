@@ -105,7 +105,7 @@ export class HTTPServer {
                 } catch (exc: any) {
                     log("UNETE", danger(rq.connection.remoteAddress), danger(exc.message || exc));
 
-                    if (this.options.responseType === "object") rs.status(500).json({ message: exc.message })
+                    if (this.options.responseType === "object") rs.status(500).json({ error: exc.message })
                     else if (this.options.responseType === "raw") rs.status(500).json(exc.message);  
                     
                 }
