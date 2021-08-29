@@ -1,6 +1,6 @@
 {
   "name": "@mysticaldragon/unete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "license": "MIT",
@@ -18,8 +18,8 @@
     "run-example": "ts-node ./examples/server"
   },
   "devDependencies": {
-    "@types/socket.io": "^3.0.2",
     "@types/node": "^16.7.6",
+    "@types/socket.io": "^3.0.2",
     "typescript": "^4.4.2"
   }
 }
